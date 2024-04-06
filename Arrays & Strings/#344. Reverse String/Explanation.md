@@ -1,4 +1,4 @@
-### Problem #392. Is Subsequence
+### Problem #344. Reverse String
 
 # Time Complexity: O(n)
 # Space Complexity: O(1)
