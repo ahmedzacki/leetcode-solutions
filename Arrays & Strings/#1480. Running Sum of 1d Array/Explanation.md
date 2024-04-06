@@ -1,4 +1,4 @@
-### Problem #2270. Number of Ways to Split Array
+### Problem #1480. Running Sum of 1d Array
 
 # Time Complexity: O(n)
 # Space Complexity: O(1)
