@@ -1,4 +1,4 @@
-### Problem #1426. Counting Elements
+### Problem #1248. Count Number of Nice Subarrays
 
 # Time Complexity: O(n)
 
