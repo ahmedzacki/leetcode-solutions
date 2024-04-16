@@ -1,0 +1,6 @@
+### Problem #83. Remove Duplicates from Sorted List
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+To solve this problem efficiently, I employed the technique of utilizing the previous node. If the linked list is either empty or contains only a single node (the head), we simply return the head of the linked list. Otherwise, I designate the head as the previous node and commence iteration from the current node, which is initially set to head.next. During each iteration, I compare the value of the current node (curr.val) with that of the previous node (prev.val) to identify duplicates. If they are the same, I initiate the removal of the current node. This is done by first preserving a reference to curr.next, ensuring we do not lose access to the remainder of the linked list. After removing the current node, I set prev.next to the current node. Subsequently, I verify whether duplicates still exist between the new current node and the previous node. If duplicates are present, the process is repeated. If not, I proceed by setting the current node as the new previous node and moving to curr.next as the new current node. Ultimately, I return the head of the linked list, thereby concluding the process.
