@@ -1,4 +1,4 @@
-### Problem #496. Next Greater Element I
+### Problem #346. Moving Average from Data Stream
 
 # Time Complexity: O(n)
 # Space Complexity: O(n)
