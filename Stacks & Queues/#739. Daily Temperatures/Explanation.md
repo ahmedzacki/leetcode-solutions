@@ -1,0 +1,6 @@
+### Problem #739. Daily Temperatures
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+
+To tackle this problem efficiently, I employed a stack data structure, motivated by the need to determine the number of days until a warmer temperature for each day. This required scanning ahead for a warmer day and recording the interval until its occurrence. To facilitate this, I utilized a stack to maintain a record of previously encountered days in a sorted manner. By iterating over the input array of temperatures using a for loop, I compared the temperature of the current day with that of the day at the top of the stack. If the current day's temperature was warmer, it meant I had found the warmer day for the day at the stack's top. I then calculated the difference between the indices of the current day and the day at the top of the stack to determine the number of days until a warmer temperature, recording this result for the day at the stack's top before removing it from the stack. If the current day's temperature was not warmer, I simply added the index of the current day's temperature to the stack and continued with the iteration. The process concluded with the return of the 'ans' array, which contained the results.
